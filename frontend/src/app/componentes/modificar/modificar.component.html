@@ -1,0 +1,30 @@
+<h2 class="d-flex justify-content-center mt-5">Modificar Informações</h2>
+
+<div class="container">
+    <div class="col">
+        <form>
+            <div class="mb-1">
+                <label class="form-label">Nome do Clinte:</label>
+                <input [(ngModel)]="transferencia.nomeCliente" type="text" class="form-control" name="cliente">
+            </div>
+
+            <div class="mb-1">
+                <label class="form-label">Número da conta:</label>
+                <input [(ngModel)]="transferencia.contaCliente" type="number" class="form-control" name="numConta">
+            </div>
+
+            <div class="mb-1">
+                <label class="form-label">Valor da transferência:</label>
+                <input [(ngModel)]="transferencia.valor" type="number" class="form-control" name="valConta">
+            </div>
+
+            <div class="mb-5">
+                <button (click)='modificar()' class="btn btn-success">Modificar</button>
+            </div>
+
+        </form>
+
+    </div>
+
+
+</div>
